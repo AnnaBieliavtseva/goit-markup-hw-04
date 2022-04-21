@@ -388,7 +388,7 @@ img {
 
 .container.footer {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .page-footer .logo {
@@ -427,7 +427,6 @@ img {
 
 .footer-socials-wrap {
   margin-left: 70px;
-  margin-bottom: 12px;
 }
 
 .join {
