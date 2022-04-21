@@ -6,6 +6,7 @@
   --accent-bg-color: #2f303a;
   --secondary-bg-color: #f5f4fa;
   --icon-color: #afb1b8;
+  --icon-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -242,7 +243,7 @@ img {
   text-align: center;
 }
 
-/* Section About */
+/* ------------------------------Section About */
 
 .about {
   padding-top: 0px;
@@ -268,7 +269,7 @@ img {
   text-align: center;
 }
 
-/* Section Team */
+/*------------------------------------------ Section Team */
 
 .team {
   background-color: var(--secondary-bg-color);
@@ -276,8 +277,14 @@ img {
 
 .team-list {
   display: flex;
-
   text-align: center;
+}
+
+.team-list-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--primary-white-color);
 }
 
 .team-list-item:not(:last-child) {
@@ -315,6 +322,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .socials-item + .socials-item {
@@ -335,7 +343,7 @@ img {
   fill: var(--icon-color);
 }
 
-/* -------------Section Clients */
+/* -----------------------------------Section Clients */
 
 .clients-list {
   display: flex;
@@ -369,13 +377,18 @@ img {
   fill: var(--accent-color);
 }
 
-/* Footer */
+/* ----------------------------------------------------------Footer */
 
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--accent-bg-color);
   color: var(--primary-white-color);
+}
+
+.container.footer {
+  display: flex;
+  align-items: center;
 }
 
 .page-footer .logo {
@@ -412,7 +425,13 @@ img {
   color: var(--accent-color);
 }
 
+.footer-socials-wrap {
+  margin-left: 70px;
+  margin-bottom: 12px;
+}
+
 .join {
+  margin-left: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -420,11 +439,25 @@ img {
   text-transform: uppercase;
 }
 
-.footer-socials-list {
+.footer-socials-thumb {
   display: flex;
+  margin-top: 20px;
 }
 
-/* Page Portfolio */
+.socials-link.footer {
+  background-color: var(--icon-bg-color);
+}
+
+.socials-link.footer:hover,
+.socials-link.footer:focus {
+  background-color: var(--accent-color);
+}
+
+.socials-icon.footer {
+  fill: var(--primary-white-color);
+}
+
+/*-------------------------------------------------------------Page Portfolio */
 
 .filters-list {
   display: flex;
@@ -457,6 +490,8 @@ img {
 .filter-btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-list {
@@ -478,6 +513,12 @@ img {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.card-list-item:hover,
+.card-list-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-box {
